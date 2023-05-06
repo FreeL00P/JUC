@@ -92,7 +92,6 @@ public class AccumulatorCompareDemo {
 
         endTime=System.currentTimeMillis();
         System.out.println("clickByLongAdder==>消耗时间"+"\t"+(endTime-startTime)+"毫秒"+"\t"+clickNumber.longAdder.sum());
-
         startTime=System.currentTimeMillis();
         for (int i = 1; i <=threadNumber; i++) {
             new Thread(()->{
@@ -108,9 +107,5 @@ public class AccumulatorCompareDemo {
         try {latch4.await();} catch (InterruptedException e) {throw new RuntimeException(e);}
         endTime=System.currentTimeMillis();
         System.out.println("clickByLongAccumulator==>消耗时间"+"\t"+(endTime-startTime)+"毫秒"+"\t"+clickNumber.longAccumulator.get());
-
-
-
-
     }
 }
