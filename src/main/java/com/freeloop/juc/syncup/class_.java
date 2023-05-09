@@ -1,4 +1,4 @@
-package com.freeloop.juc.sync;
+package com.freeloop.juc.syncup;
 
 import org.openjdk.jol.info.ClassLayout;
 
