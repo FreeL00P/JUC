@@ -1,5 +1,7 @@
 package com.freeloop.juc.readWriteLock;
 
+import lombok.Data;
+
 import java.util.concurrent.locks.ReentrantReadWriteLock;
 
 /**
